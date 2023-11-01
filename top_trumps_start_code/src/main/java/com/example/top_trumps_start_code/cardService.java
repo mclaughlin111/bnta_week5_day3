@@ -4,10 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TopTrumpsStartCodeApplication {
+public class cardService {
+
+
 
 	public static void main(String[] args) {
-		SpringApplication.run(TopTrumpsStartCodeApplication.class, args);
+		SpringApplication.run(cardService.class, args);
 	}
 
 }

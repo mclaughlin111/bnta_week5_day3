@@ -6,10 +6,7 @@ import com.example.top_trumps_start_code.models.Rank;
 import com.example.top_trumps_start_code.models.Suit;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PatchMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 
@@ -18,15 +15,19 @@ import java.util.ArrayList;
 public class TopTrumpController {
 
     @PostMapping
-    public ResponseEntity<String> startGame(ArrayList<Card> givenCard){
-//        this.givenCard =
-//        Card givenCard = new Card();
-        return new ResponseEntity<>("Thank you", HttpStatus.CREATED);
+    public ResponseEntity<String> submitCard(@RequestBody ArrayList<Card> givenCard){
+        Card cardOne = givenCard.get(0);
+        Card cardTwo = givenCard.get(1);
+        String returnString = String.valueOf(cardOne.getRank()) + " " + String.valueOf(cardTwo.getRank()) ;
+
+        return new ResponseEntity<>(returnString, HttpStatus.CREATED);
     }
 
-    Card card1 = given
-
-
+//    @GetMapping
+//    public ResponseEntity<String> checkCard() {
+////        String reply = Card.getCardValue();
+////        return new ResponseEntity<>(reply, HttpStatus.OK);
+//    }
 
 
 }
