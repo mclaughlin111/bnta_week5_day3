@@ -9,7 +9,7 @@ Each rank has their nominal value as a value property (e.g. 2 for `TWO`), `JACK`
 
 ## MVP
 
-* Create a `TopTrumpsController` and in it an endpoint to handle a POST request sent via Postman. The endpoint should take out 2 card objects from the RequestBody. (Note that we need to put the Card objects in an Array for this to work, see the sample payload below. Make sure the type of your RequestBody is ArrayList<Card>)
+* Create a `controllers` and in it an endpoint to handle a POST request sent via Postman. The endpoint should take out 2 card objects from the RequestBody. (Note that we need to put the Card objects in an Array for this to work, see the sample payload below. Make sure the type of your RequestBody is ArrayList<Card>)
 * Create a `TopTrumpsService` class that has a method called `checkWinner()`. This method should take in the 2 card objects.
 * After determining which is the higher value card, send back a response with the appropriate message (e.g. "Queen of Hearts wins!")
 
