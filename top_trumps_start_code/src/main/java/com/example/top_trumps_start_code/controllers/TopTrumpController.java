@@ -19,10 +19,12 @@ public class TopTrumpController {
 
     @PostMapping
     public ResponseEntity<String> startGame(ArrayList<Card> givenCard){
-        this.givenCard =
+//        this.givenCard =
 //        Card givenCard = new Card();
         return new ResponseEntity<>("Thank you", HttpStatus.CREATED);
     }
+
+    Card card1 = given
 
 
 
