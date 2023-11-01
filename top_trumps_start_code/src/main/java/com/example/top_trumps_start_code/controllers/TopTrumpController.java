@@ -18,9 +18,10 @@ import java.util.ArrayList;
 public class TopTrumpController {
 
     @PostMapping
-    public ResponseEntity<Card> newCard(){
-        Card givenCard = new Card();
-        return new ResponseEntity<>(givenCard, HttpStatus.CREATED);
+    public ResponseEntity<String> startGame(ArrayList<Card> givenCard){
+        this.givenCard =
+//        Card givenCard = new Card();
+        return new ResponseEntity<>("Thank you", HttpStatus.CREATED);
     }
 
 
