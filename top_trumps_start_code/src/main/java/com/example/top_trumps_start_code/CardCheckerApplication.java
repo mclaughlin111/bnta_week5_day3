@@ -4,12 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class cardService {
-
-
-
+public class CardCheckerApplication{
 	public static void main(String[] args) {
-		SpringApplication.run(cardService.class, args);
+		SpringApplication.run(CardCheckerApplication.class, args);
 	}
-
 }
